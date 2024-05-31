@@ -1,0 +1,41 @@
+<div class="container-fluid bg-dark">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto">
+        <div class="card">
+          <div class="card-header bg-dark">
+            <h4 class="card-title text-white"> D' autres renseignements à ajouter</h4>
+  
+          </div>
+          <div class="card-body">
+            <form [formGroup]="stepFiveForm" (ngSubmit)="stepFiveSubmit()" autocomplete="off" novalidate #formRef="ngForm">
+   
+  
+                <div class="row">
+                    <div class="col-md-12">
+                           <h3>Si vous avez d'autres renseignements à ajouter au niveau de tous les tableaux </h3>
+                      <mat-form-field class="example-full-width">
+                         <textarea formControlName="description" matInput placeholder="  décrivez les en indiquant la partie concernée."></textarea>
+                       </mat-form-field>
+                    </div>
+
+              </div>
+  
+               
+  
+              <div class="buttons">
+                
+                <div class="button">
+                  <button mat-raised-button type="submit" cdkStepperNext class="btn btn-dark"
+                    cdkStepperNext>Exporter</button>
+                </div>
+              </div>
+  
+  
+  
+            </form>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
